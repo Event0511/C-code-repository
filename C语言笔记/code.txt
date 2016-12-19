@@ -1,0 +1,15 @@
+#include <stdio.h> #include <stdlib.h>
+int *InputDyArray(const int m, const int n)
+{
+        int i, j;
+        int *p;
+        p = (int *)calloc(m*n, sizeof(int));
+        for (i = 0; i < n; i++)
+        {
+                for (j = 0; j < n; j++)
+                {
+                        scanf("%d",(p+i*n+j));
+                }
+        }
+        return p;
+}
